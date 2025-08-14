@@ -15,7 +15,9 @@ const PORT = process.env.PORT || 5000;
 // ========================================
 // MIDDLEWARE CONFIGURATION
 // ========================================
-app.use(cors());
+app.use(cors({
+  origin: 'https://ubiquitous-cucurucho-98063a.netlify.app',
+}));
 app.use(express.json());
 
 // ========================================
