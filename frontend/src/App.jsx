@@ -15,7 +15,7 @@ function App() {
     setWeatherData(null);
 
     try {
-      const response = await axios.get(`https://weather-backend-zqp1.onrender.com/api/weather/${encodeURIComponent(city)}`);
+      const response = await axios.get(`/api/weather/${encodeURIComponent(city)}`);
       setWeatherData(response.data);
     } catch (err) {
       console.error('Error fetching weather:', err);
